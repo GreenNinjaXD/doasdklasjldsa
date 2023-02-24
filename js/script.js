@@ -2,7 +2,8 @@ let sec = document.querySelector('.s'),
     min = document.querySelector('.m'),
     hour = document.querySelector('.h'),
     elMin = document.querySelector('.minutes'),
-    elHour = document.querySelector('.hours');
+    elHour = document.querySelector('.hours'),
+    elSec = document.querySelector('.seconds');
 
 // let time = new Date(),
 //     seconds = time.getSeconds() ,
@@ -22,6 +23,7 @@ function clock() {
 
     elMin.innerHTML = time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes()
     elHour.innerHTML = time.getHours() < 10 ? '0' + time.getHours() : time.getHours()
+    elSec.innerHTML = time.getSeconds() < 10 ? '0' + time.getSeconds() : time.getSeconds()
 
     sec.animate(
         [{

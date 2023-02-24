@@ -246,6 +246,37 @@ body {
 .numberClock::before,
 .numberClock::after {
     content: '';
+    position: absolute;
+    top: 30px;
+    left: 74px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    position: absolute;
+    animation: opacity 1s infinite;
+}
+
+.seconds::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 151px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    position: absolute;
+    animation: opacity 1s infinite;
+}
+
+.seconds::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 151px;
     width: 8px;
     height: 8px;
     border-radius: 50%;
@@ -265,6 +296,7 @@ body {
 
 .hours,
 .minutes,
+.seconds,
 .stopwatch__hours,
 .stopwatch__minutes,
 .stopwatch__seconds {
